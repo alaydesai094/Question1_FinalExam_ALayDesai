@@ -5,8 +5,12 @@ import org.junit.Test;
 public class CalculateFareTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void RC1() {
+		
+		CalculateFare b = new CalculateFare();
+		double fare = b.Total("Don Mills", "Leslie");
+		assertEquals(2.50, fare);
+		
 	}
 
 }
